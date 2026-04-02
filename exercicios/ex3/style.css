@@ -3,29 +3,136 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 nav {
   background-color: #333;
   color: #fff;
-  padding: 10px;
+  padding: 10px 200px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
 }
+
+nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
 nav a {
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
-    padding: 8px;
-
+  font-weight: 600;
+  padding: 8px;
+  font-size: 16px;
 }
-nav li {
+
+nav a.items:hover {
+  box-shadow: 0 8px 0 0 #d0ff00;
+}
+
+.logo-cgn {
+  padding-right: 40px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+#noticia-titulo,
+#noticia-subtitulo,
+#noticia-conteudo,
+#noticia-imagem,
+#noticia-data {
+  width: 100%;
+  max-width: 1000px;
+}
+
+#noticia-titulo {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+#noticia-subtitulo {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #5c5c5c;
+}
+
+#noticia-data {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #5c5c5c;
+}
+
+#noticia-imagem {
+  margin: 20px 0;
+}
+
+#noticia-imagem img {
+  width: 100%;
+  height: auto;
+}
+
+#noticia-conteudo {
+  padding-top: 20px;
+  font-size: 1.2rem;
+}
+
+#noticia-conteudo p {
+  margin-bottom: 20px;
+}
+
+aside {
+  margin-left: 40px;
+  width: 100%;
+  max-width: 300px;
+  background-color: rgb(238, 238, 238);
+  padding: 10px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+
+span {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.itens-mais-acessados {
   list-style: none;
 }
-nav ul {
-  display: flex;
-  gap: 20px;
+
+.link-mais-acessados {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 20px;
 }
-nav a:hover {
-  box-shadow: 0 8px 0 0 #d0ff00;
-  padding: 8px;
+
+.itens-mais-acessados img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.titulo-mais-acessados {
+  font-size: 1rem;
+  padding: 0 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
 }
