@@ -1,0 +1,123 @@
+
+
+@font-face {
+  font-family: 'NetflixSans';
+  src: local('NetflixSans Regular'), url('../fonts/Netflix Sans/NetflixSans-Rg.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NetflixSans';
+  src: local('NetflixSans Bold'), url('../fonts/Netflix Sans/NetflixSans-Bd.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: 'NetflixSans', sans-serif;
+  color: white;
+}
+
+body {
+  margin: 4rem 5rem ;
+}
+
+.container-cards {
+  display: center;
+  justify-content: center;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.card{
+  background-color: green;
+  height: 290px;
+  width: 200px;
+  border-radius: 6%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-card{
+  background-size: cover;
+  border-radius: 6%;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.numero-overlay{
+  position: absolute;
+  top: 6rem;
+  left: -2.5rem;
+  background-color: transparent;
+  padding: 0.25rem 0.5rem;
+  font-size: 8rem;
+  font-weight: 700;
+  z-index: 10;
+  color: black;
+  -webkit-text-stroke: 2px white;
+}
+
+.card{
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card:hover {
+  transform: scale(1.08);
+  z-index: 20;
+}
+
+header, section, h2{
+  padding-bottom: 30px;
+}
+.mais-motivos h2{
+  font-weight: 700;
+
+}
+.container-extra-cards{
+  height: 270px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.card-extra{
+  background-image:linear-gradient(to bottom right, #192146, #200f17);
+  border-radius: 6%;
+  padding: 25px 15px 0  ;
+  width: 360px;
+  height: auto;
+}
+
+.card-title{
+  background-color: transparent;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+p { 
+  color: rgba(255, 255, 255, 0.8);
+  font-size: .9rem;
+  background-color: transparent;
+}
+
+.card-extra{
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card-extra:hover {
+  transform: scale(1.03);
+  z-index: 20;
+}
