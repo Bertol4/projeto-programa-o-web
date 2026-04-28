@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.nav-link {
+  font-size: 14px;
+  cursor: pointer;
+}
+.btn-blue {
+  background-color: #0061fe;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  padding: 80px 50px;
+  gap: 50px;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+
+.text-section {
+  flex: 1;
+}
+h1 {
+  font-size: 48px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.link-text {
+  color: #0061fe;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.image-section {
+  flex: 1;
+  background-color: #2b2b2b;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.item {
+  position: relative; /* Necessário para posicionar o número sobre a imagem */
+  width: 150px;
+  height: 220px;
+  flex-shrink: 0;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item span {
+  position: absolute; /* Posiciona o número sobre a imagem */
+  bottom: -20px;
+  left: -20px;
+  font-size: 120px;
+  font-weight: 900;
+  color: black;
+  -webkit-text-stroke: 2px white;
+  text-shadow:
+    2px 2px 0 white,
+    -2px -2px 0 white,
+    2px -2px 0 white,
+    -2px 2px 0 white;
+  z-index: 1; /* Garante que o número fique acima da imagem */
+}
